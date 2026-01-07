@@ -1,0 +1,53 @@
+{
+  "nextDate": "2026-03-11",
+  "employees": {
+    "Employee 01": {
+      "shiftIndex": 1,
+      "cycleDay": 0
+    },
+    "Employee 02": {
+      "shiftIndex": 2,
+      "cycleDay": 0
+    },
+    "Employee 03": {
+      "shiftIndex": 0,
+      "cycleDay": 0
+    },
+    "Employee 04": {
+      "shiftIndex": 1,
+      "cycleDay": 1
+    },
+    "Employee 05": {
+      "shiftIndex": 1,
+      "cycleDay": 4
+    },
+    "Employee 06": {
+      "shiftIndex": 1,
+      "cycleDay": 4
+    },
+    "Employee 07": {
+      "shiftIndex": 1,
+      "cycleDay": 4
+    },
+    "Employee 08": {
+      "shiftIndex": 1,
+      "cycleDay": 4
+    },
+    "Employee 09": {
+      "shiftIndex": 1,
+      "cycleDay": 4
+    },
+    "Employee 10": {
+      "shiftIndex": 1,
+      "cycleDay": 4
+    },
+    "Employee 11": {
+      "shiftIndex": 1,
+      "cycleDay": 4
+    },
+    "Employee 12": {
+      "shiftIndex": 1,
+      "cycleDay": 4
+    }
+  }
+}

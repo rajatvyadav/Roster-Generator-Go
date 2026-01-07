@@ -1,0 +1,64 @@
+{
+  "nextRosterStartDate": "2026-04-24",
+  "employees": [
+    {
+      "name": "Employee 01",
+      "active": true,
+      "leaves": [
+        {
+          "from": "2026-02-10",
+          "to": "2026-02-21"
+        }
+      ],
+      "continuity": {
+        "shift": "D3",
+        "cycleDay": 2,
+        "cycleIndex": 2
+      }
+    },
+    {
+      "name": "Employee 02",
+      "active": true,
+      "leaves": [
+        {
+          "from": "2026-03-15",
+          "to": "2026-03-19"
+        }
+      ],
+      "continuity": {
+        "shift": "D5",
+        "cycleDay": 2,
+        "cycleIndex": 2
+      }
+    },
+    {
+      "name": "Employee 03",
+      "active": true,
+      "leaves": [],
+      "continuity": {
+        "shift": "D1",
+        "cycleDay": 2,
+        "cycleIndex": 2
+      }
+    },
+    {
+      "name": "Employee 04",
+      "active": true,
+      "leaves": [],
+      "continuity": {
+        "shift": "D3",
+        "cycleDay": 3,
+        "cycleIndex": 2
+      }
+    },
+    {
+      "name": "Employee 05",
+      "active": false,
+      "leaves": [],
+      "continuity": {
+        "shift": "D3",
+        "cycleDay": 4
+      }
+    }
+  ]
+}
