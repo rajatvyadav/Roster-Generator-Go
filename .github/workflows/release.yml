@@ -29,29 +29,14 @@ jobs:
           CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o dist/Roster-Generator-Go-linux-amd64 ./...
           CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -o dist/Roster-Generator-Go-windows-amd64.exe ./...
 
-      - name: Create GitHub release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Create GitHub release and upload assets
+        uses: softprops/action-gh-release@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag_name: ${{ env.RELEASE_TAG }}
-          release_name: ${{ env.RELEASE_TAG }}
+          files: |
+            dist/Roster-Generator-Go-linux-amd64
+            dist/Roster-Generator-Go-windows-amd64.exe
           body: "Release ${{ env.RELEASE_TAG }}: Linux and Windows executables for Roster Generator."
           draft: false
           prerelease: false
-
-      - name: Upload Linux asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: dist/Roster-Generator-Go-linux-amd64
-          asset_name: Roster-Generator-Go-linux-amd64
-          asset_content_type: application/octet-stream
-
-      - name: Upload Windows asset
-        uses: actions/upload-release-asset@v1
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: dist/Roster-Generator-Go-windows-amd64.exe
-          asset_name: Roster-Generator-Go-windows-amd64.exe
-          asset_content_type: application/octet-stream
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
