@@ -47,6 +47,19 @@ Add leave ranges under an employee’s `leaves` list:
 
 On leave days the roster shows `L`.
 
+## Download release binaries
+
+Release binaries are published automatically when a Git tag matching `v*.*.*` is pushed.
+
+- Linux executable:
+  `https://github.com/rajatvyadav/Roster-Generator-Go/releases/download/<tag>/Roster-Generator-Go-linux-amd64`
+- Windows executable:
+  `https://github.com/rajatvyadav/Roster-Generator-Go/releases/download/<tag>/Roster-Generator-Go-windows-amd64.exe`
+
+Replace `<tag>` with the release version, for example `v1.0.0`.
+
+GitHub release assets are published as release downloads and do not expire.
+
 ## Common workflows
 
 - Add employee: add a new entry in `employees` with `active: true` (omit `continuity` and it will be initialized automatically).
