@@ -2,6 +2,25 @@
 
 This folder contains the Go program that generates the Excel roster (`.xlsx`) and updates a single JSON config file with scheduling continuity.
 
+## Output Preview
+
+The application generates a comprehensive Excel workbook with multiple sheets showing employee shift schedules and details.
+
+### Roster Schedule
+The main roster sheet displays all employees' shift assignments across a configurable date range, with color-coded shifts (Morning, Afternoon, Night) and days off.
+
+![Roster Schedule](docs/ss1.png)
+
+### Shift Details & Coverage Summary
+This sheet provides shift definitions, work pattern rules, and coverage information for effective workforce planning.
+
+![Shift Details](docs/ss2.png)
+
+### Employee Master Data
+The employee master sheet contains contact information, shift preferences, and work statistics for all team members.
+
+![Employee Master Data](docs/ss3.png)
+
 ## Config file
 
 By default the tool reads/writes `roster_config.json` in this folder (or the path you pass via `--config`).
